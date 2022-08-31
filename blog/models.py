@@ -11,7 +11,6 @@ class Post(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
     edited_by_blog = models.BooleanField(default=False)
     pic = models.FileField(upload_to='uploads/')
-    test_boolean= models.BooleanField(default=False)
 
     def publish(self):
         self.published_date = timezone.now()
