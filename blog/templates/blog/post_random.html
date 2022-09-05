@@ -1,0 +1,11 @@
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+
+    <div>
+        <h1><a href="">{{ random_post.title }}</a></h1>
+        <p>published: {{ random_post.published_date }}</p>
+        <p>{{ random_post.text|linebreaksbr }}</p>
+        <img src="uploads/{{random_post.pic}}">
+    </div>
